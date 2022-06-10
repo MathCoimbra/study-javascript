@@ -1,0 +1,19 @@
+<!--Aplicação do javascript dentro do documento HTML, possibilitando dessa vez o reuso do código por meio de uma função-->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>JavaScript obstrutivo função</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+      <!--O atributo onclick recebe uma função, que logo será chamada para execução-->
+    <button onclick="exibirFrase();">Teste</button>
+  </body>
+</html>
+<!--Chamada da função-->
+<script>
+  function exibirFrase()
+  {
+    window.alert("Alô, Mundo!");
+  }
+</script>
