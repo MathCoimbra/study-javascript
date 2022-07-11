@@ -2,7 +2,7 @@ var a = 1
 var b = 2
 
 if (a == 1) {
-  var a = 11 // escopo global
+  var a = 11 // escopo global e local
   let b = 22 // escopo limitado ao bloco, no caso, ao if
 
   console.log(a) // resultará no valor 11
