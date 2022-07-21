@@ -1,5 +1,5 @@
 const array = []
 
 /* Sintaxe do método */
-array.map(callback, thisArg)
+array.filter(callback(item, index, array), thisArg)
 
