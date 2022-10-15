@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estrutura base - jQuery</title>
+
+    <!-- Importanto jQuery -->
+    <script src="jquery-3.6.1.min.js"></script>
+
+    <!-- Scripts com jQuery -->
+    <script>
+      $(document).ready(function () {
+
+        // Variáveis e os seletores
+        // val - equivalente ao value do JS, para recuperar o valor do input
+        var campo = $('input').val();
+        // html - equivalente ao innerHTML do JS, para recuperar o valor do titulo tendo a hashtag por ser um id e subtitulo um ponto por ser uma classe
+        var titulo = $('#titulo').html();
+        var subtitulo = $('.subtitulo').html();
+
+        // exibindo os valores das variáveis
+        alert(campo);
+        alert(titulo);
+        alert(subtitulo);
+
+      });
+    </script>
+  </head>
+  <body>
+
+    <input type="text" value="Nome" />
+    <h1 id="titulo">Título em H1</h1>
+    <h2 class="subtitulo">Título em H2</h2>
+
+  </body>
+</html>
