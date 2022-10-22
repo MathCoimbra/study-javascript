@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos</title>
+
+    <script src="jquery-3.6.1.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+
+        //Ocultando h1 com css
+        $("h1").css("display","none")
+
+        //Exibindo h1 com fade
+        $('#exibir').click(function () {
+          $('h1').fadeIn();
+        });
+
+        //Ocultando h1 com fade
+        $('#ocultar').click(function () {
+          $('h1').fadeOut();
+        });
+      });
+    </script>
+  </head>
+  <body>
+
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+
+    <br>
+
+    <h1>Teste</h1>
+
+  </body>
+</html>
