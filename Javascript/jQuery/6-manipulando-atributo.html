@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulando atributo com jQuery</title>
+
+  <!-- Importanto jQuery -->
+  <script src="jquery-3.6.1.min.js"></script>
+
+  <!-- Scripts com jQuery -->
+  <script>
+
+    $(document).ready(function() {
+ 
+      /* Adicionando atributos com jQuery */
+      $("img").attr("width", "500");
+      $("img").attr("title", "Logo da Proway");
+
+    })
+
+  </script>
+
+</head>
+<body>
+  
+  <img src="logo_proway.png">
+
+</body>
+</html>
